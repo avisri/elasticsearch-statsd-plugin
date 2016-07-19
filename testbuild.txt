@@ -1,0 +1,554 @@
+[root@sfm-elast-lp009 elasticsearch-statsd-plugin]#  mvn package -Dtests.security.manager=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building elasticsearch-statsd 2.3.4.0
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ elasticsearch-statsd ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /u01/elasticsearch-statsd-plugin/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ elasticsearch-statsd ---
+[INFO] Compiling 7 source files to /u01/elasticsearch-statsd-plugin/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ elasticsearch-statsd ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ elasticsearch-statsd ---
+[INFO] Compiling 3 source files to /u01/elasticsearch-statsd-plugin/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ elasticsearch-statsd ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom (2 KB at 2.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.9/maven-2.0.9.pom (19 KB at 94.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/8/maven-parent-8.pom (24 KB at 374.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (5 KB at 61.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.pom (3 KB at 39.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.pom (3 KB at 22.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.10/maven-surefire-common-2.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.10/maven-surefire-common-2.10.pom (4 KB at 72.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom (4 KB at 69.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (9 KB at 116.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (9 KB at 129.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom (2 KB at 19.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom (3 KB at 43.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom (3 KB at 34.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom (4 KB at 59.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom (3 KB at 35.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom (3 KB at 42.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom (2 KB at 30.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom (2 KB at 35.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom (8 KB at 126.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom (2 KB at 32.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom (2 KB at 29.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom (2 KB at 24.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom (2 KB at 26.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom (3 KB at 33.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom (2 KB at 23.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (4 KB at 54.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom (4 KB at 59.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom (10 KB at 157.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom (23 KB at 362.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 KB at 211.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom (2 KB at 22.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.10/maven-surefire-common-2.10.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.jar (34 KB at 250.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar (31 KB at 223.0 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 KB at 159.7 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.10/maven-surefire-common-2.10.jar (60 KB at 328.2 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar (158 KB at 421.2 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.jar (220 KB at 600.7 KB/sec)
+[INFO] Surefire report directory: /u01/elasticsearch-statsd-plugin/target/surefire-reports
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.pom (3 KB at 43.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.10/surefire-providers-2.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.10/surefire-providers-2.10.pom (3 KB at 32.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.10/surefire-junit4-2.10.jar (33 KB at 296.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.automattic.elasticsearch.statsd.test.StatsdPluginIntegrationTest
+2016-07-19 21:43:07 WARN  bootstrap:50 - unable to load JNA native support library, native methods will be disabled.
+java.lang.UnsatisfiedLinkError: /tmp/jna-3506402/jna4236294774788215779.tmp: /tmp/jna-3506402/jna4236294774788215779.tmp: failed to map segment from shared object: Operation not permitted
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at com.sun.jna.Native.loadNativeDispatchLibraryFromClasspath(Native.java:761)
+	at com.sun.jna.Native.loadNativeDispatchLibrary(Native.java:736)
+	at com.sun.jna.Native.<clinit>(Native.java:131)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.elasticsearch.bootstrap.Natives.<clinit>(Natives.java:45)
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:89)
+	at org.elasticsearch.bootstrap.BootstrapForTesting.<clinit>(BootstrapForTesting.java:85)
+	at org.elasticsearch.test.ESTestCase.<clinit>(ESTestCase.java:99)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$2.run(RandomizedRunner.java:585)
+2016-07-19 21:43:07 WARN  bootstrap:65 - cannot check if running as root because JNA is not available
+2016-07-19 21:43:07 WARN  bootstrap:96 - cannot install syscall filters because JNA is not available
+2016-07-19 21:43:07 WARN  bootstrap:57 - cannot mlockall because JNA is not available
+2016-07-19 21:43:07 WARN  bootstrap:81 - cannot register console handler because JNA is not available
+2016-07-19 21:43:08 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#testThatIndexingResultsInMonitoring]: setup test
+2016-07-19 21:43:08 INFO  test:268 - Setup InternalTestCluster [SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster] with seed [41B85A7929686E96] using [3] data nodes and [0] client nodes
+2016-07-19 21:43:08 INFO  node:149 - [node_s0] version[2.3.4], pid[23808], build[e455fd0/2016-06-30T11:24:31Z]
+2016-07-19 21:43:08 INFO  node:151 - [node_s0] initializing ...
+2016-07-19 21:43:08 INFO  plugins:180 - [node_s0] modules [], plugins [mock-transport-service, mock-index-store, statsd, mock-engine-factory, node-mocks, asserting-local-transport, mock-search-service], sites []
+2016-07-19 21:43:08 INFO  env:290 - [node_s0] using [1] data paths, mounts [[/tmp (/dev/mapper/vg_sys-lv_tmp)]], net usable_space [1.7gb], net total_space [1.9gb], spins? [possibly], types [ext4]
+2016-07-19 21:43:08 INFO  env:305 - [node_s0] heap size [6.9gb], compressed ordinary object pointers [true]
+2016-07-19 21:43:08 WARN  env:315 - [node_s0] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+2016-07-19 21:43:10 INFO  node:225 - [node_s0] initialized
+2016-07-19 21:43:10 INFO  node:251 - [node_s0] starting ...
+2016-07-19 21:43:10 INFO  StatsdService:101 - [node_s0] StatsD reporting triggered every [1s] to host [localhost:12345] with metric prefix [myhost0]
+2016-07-19 21:43:10 INFO  transport:184 - [node_s0] publish_address {local[1]}, bound_addresses {local[1]}
+2016-07-19 21:43:10 INFO  discovery:86 - [node_s0] SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/nhtp3SC6TyWY6PX-B4k9eQ
+2016-07-19 21:43:10 INFO  service:580 - [node_s0] new_master {node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local}, reason: local-disco-initial_connect(master)
+2016-07-19 21:43:10 INFO  node:300 - [node_s0] started
+2016-07-19 21:43:10 INFO  test:959 - Start Shared Node [node_s0] not shared
+2016-07-19 21:43:10 INFO  node:149 - [node_s1] version[2.3.4], pid[23808], build[e455fd0/2016-06-30T11:24:31Z]
+2016-07-19 21:43:10 INFO  node:151 - [node_s1] initializing ...
+2016-07-19 21:43:10 INFO  plugins:180 - [node_s1] modules [], plugins [mock-transport-service, mock-index-store, statsd, mock-engine-factory, node-mocks, asserting-local-transport, mock-search-service], sites []
+2016-07-19 21:43:10 INFO  env:290 - [node_s1] using [1] data paths, mounts [[/tmp (/dev/mapper/vg_sys-lv_tmp)]], net usable_space [1.7gb], net total_space [1.9gb], spins? [possibly], types [ext4]
+2016-07-19 21:43:10 INFO  env:305 - [node_s1] heap size [6.9gb], compressed ordinary object pointers [true]
+2016-07-19 21:43:10 WARN  env:315 - [node_s1] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+2016-07-19 21:43:10 INFO  gateway:268 - [node_s0] recovered [0] indices into cluster_state
+2016-07-19 21:43:10 INFO  node:225 - [node_s1] initialized
+2016-07-19 21:43:10 INFO  node:251 - [node_s1] starting ...
+2016-07-19 21:43:10 INFO  StatsdService:101 - [node_s1] StatsD reporting triggered every [1s] to host [localhost:12345] with metric prefix [myhost1]
+2016-07-19 21:43:10 INFO  transport:184 - [node_s1] publish_address {local[2]}, bound_addresses {local[2]}
+2016-07-19 21:43:10 INFO  discovery:86 - [node_s1] SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/e8gZB1wbTFeX_5i_g9PWdA
+2016-07-19 21:43:10 INFO  service:580 - [node_s0] added {{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local},}, reason: local-disco-receive(from node[{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}])
+2016-07-19 21:43:10 INFO  service:580 - [node_s1] detected_master {node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local}, added {{node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:11 INFO  node:300 - [node_s1] started
+2016-07-19 21:43:11 INFO  test:959 - Start Shared Node [node_s1] not shared
+2016-07-19 21:43:11 INFO  node:149 - [node_s2] version[2.3.4], pid[23808], build[e455fd0/2016-06-30T11:24:31Z]
+2016-07-19 21:43:11 INFO  node:151 - [node_s2] initializing ...
+2016-07-19 21:43:11 INFO  plugins:180 - [node_s2] modules [], plugins [mock-transport-service, mock-index-store, statsd, mock-engine-factory, node-mocks, asserting-local-transport, mock-search-service], sites []
+2016-07-19 21:43:11 INFO  env:290 - [node_s2] using [1] data paths, mounts [[/tmp (/dev/mapper/vg_sys-lv_tmp)]], net usable_space [1.7gb], net total_space [1.9gb], spins? [possibly], types [ext4]
+2016-07-19 21:43:11 INFO  env:305 - [node_s2] heap size [6.9gb], compressed ordinary object pointers [true]
+2016-07-19 21:43:11 WARN  env:315 - [node_s2] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+2016-07-19 21:43:11 INFO  node:225 - [node_s2] initialized
+2016-07-19 21:43:11 INFO  node:251 - [node_s2] starting ...
+2016-07-19 21:43:11 INFO  StatsdService:101 - [node_s2] StatsD reporting triggered every [1s] to host [localhost:12345] with metric prefix [myhost2]
+2016-07-19 21:43:11 INFO  transport:184 - [node_s2] publish_address {local[3]}, bound_addresses {local[3]}
+2016-07-19 21:43:11 INFO  discovery:86 - [node_s2] SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/DAKD_fY0S7yde45n6sjF-g
+2016-07-19 21:43:11 INFO  service:580 - [node_s0] added {{node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local},}, reason: local-disco-receive(from node[{node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local}])
+2016-07-19 21:43:11 INFO  service:580 - [node_s1] added {{node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:11 INFO  service:580 - [node_s2] detected_master {node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local}, added {{node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local},{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:11 INFO  node:300 - [node_s2] started
+2016-07-19 21:43:11 INFO  test:959 - Start Shared Node [node_s2] not shared
+2016-07-19 21:43:11 INFO  plugins:180 - [transport_client_node_s1] modules [], plugins [], sites []
+2016-07-19 21:43:11 INFO  transport:184 - [transport_client_node_s1] publish_address {local[4]}, bound_addresses {local[4]}
+2016-07-19 21:43:11 INFO  plugins:180 - [transport_client_node_s0] modules [], plugins [], sites []
+2016-07-19 21:43:11 INFO  transport:184 - [transport_client_node_s0] publish_address {local[5]}, bound_addresses {local[5]}
+2016-07-19 21:43:11 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#testThatIndexingResultsInMonitoring]: starting test
+2016-07-19 21:43:11 INFO  StatsdPluginIntegrationTest:52 - Creating index zryfts
+2016-07-19 21:43:11 INFO  plugins:180 - [transport_client_node_s2] modules [], plugins [], sites []
+2016-07-19 21:43:11 INFO  transport:184 - [transport_client_node_s2] publish_address {local[6]}, bound_addresses {local[6]}
+2016-07-19 21:43:11 INFO  StatsdPluginIntegrationTest:734 - using custom data_path for index: [zdxjsyuxCO]
+2016-07-19 21:43:11 INFO  metadata:391 - [node_s0] [zryfts] creating index, cause [api], templates [random_index_template], shards [3]/[1], mappings []
+2016-07-19 21:43:12 INFO  allocation:238 - [node_s0] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[zryfts][2], [zryfts][0], [zryfts][0], [zryfts][2]] ...]).
+2016-07-19 21:43:12 INFO  allocation:238 - [node_s0] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[zryfts][2], [zryfts][0], [zryfts][2], [zryfts][0]] ...]).
+2016-07-19 21:43:12 INFO  metadata:321 - [node_s0] [zryfts] create_mapping [nfhody]
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#testThatIndexingResultsInMonitoring]: finished test
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#testThatIndexingResultsInMonitoring]: cleaning up after test
+2016-07-19 21:43:16 INFO  store:136 - [node_s1] [zryfts][1] start check index
+2016-07-19 21:43:16 INFO  store:136 - [node_s2] [zryfts][0] start check index
+2016-07-19 21:43:16 INFO  store:167 - [node_s1] [zryfts][1] end check index
+2016-07-19 21:43:16 INFO  store:167 - [node_s2] [zryfts][0] end check index
+2016-07-19 21:43:16 INFO  store:136 - [node_s0] [zryfts][0] start check index
+2016-07-19 21:43:16 INFO  store:167 - [node_s0] [zryfts][0] end check index
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#testThatIndexingResultsInMonitoring]: cleaned up after test
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#masterFailOverShouldWork]: setup test
+2016-07-19 21:43:16 INFO  test:1077 - Successfully wiped data directory for node location: /tmp/com.automattic.elasticsearch.statsd.test.StatsdPluginIntegrationTest_492419FCDFB6E658-001/tempDir-001/data/SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/nodes/0
+2016-07-19 21:43:16 INFO  test:1077 - Successfully wiped data directory for node location: /tmp/com.automattic.elasticsearch.statsd.test.StatsdPluginIntegrationTest_492419FCDFB6E658-001/tempDir-001/data/SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/nodes/2
+2016-07-19 21:43:16 INFO  test:1077 - Successfully wiped data directory for node location: /tmp/com.automattic.elasticsearch.statsd.test.StatsdPluginIntegrationTest_492419FCDFB6E658-001/tempDir-001/data/SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/nodes/1
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#masterFailOverShouldWork]: starting test
+2016-07-19 21:43:16 INFO  StatsdPluginIntegrationTest:52 - Creating index ytesbr
+2016-07-19 21:43:16 INFO  metadata:391 - [node_s0] [ytesbr] creating index, cause [api], templates [random_index_template], shards [9]/[0], mappings []
+2016-07-19 21:43:17 INFO  allocation:238 - [node_s0] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[ytesbr][3], [ytesbr][2], [ytesbr][5], [ytesbr][6], [ytesbr][8], [ytesbr][0], [ytesbr][4], [ytesbr][1], [ytesbr][7]] ...]).
+2016-07-19 21:43:17 INFO  metadata:321 - [node_s0] [ytesbr] create_mapping [tcjpqd]
+2016-07-19 21:43:17 INFO  test:1226 - Closing master node [node_s0]
+2016-07-19 21:43:17 INFO  node:310 - [node_s0] stopping ...
+2016-07-19 21:43:17 INFO  store:136 - [node_s0] [ytesbr][4] start check index
+2016-07-19 21:43:17 INFO  allocation:238 - [node_s1] Cluster health status changed from [GREEN] to [RED] (reason: [elected as master]).
+2016-07-19 21:43:17 INFO  store:167 - [node_s0] [ytesbr][4] end check index
+2016-07-19 21:43:17 INFO  service:580 - [node_s1] master {new {node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}, previous {node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local}}, removed {{node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local},}, reason: local-disco-update
+2016-07-19 21:43:17 INFO  node:340 - [node_s0] stopped
+2016-07-19 21:43:17 INFO  node:358 - [node_s0] closing ...
+2016-07-19 21:43:17 INFO  service:580 - [node_s2] master {new {node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}, previous {node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local}}, removed {{node_s0}{nhtp3SC6TyWY6PX-B4k9eQ}{local}{local[1]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:17 INFO  StatsdService:121 - [node_s0] StatsD reporter stopped
+2016-07-19 21:43:17 INFO  node:436 - [node_s0] closed
+2016-07-19 21:43:17 INFO  node:149 - [node_s3] version[2.3.4], pid[23808], build[e455fd0/2016-06-30T11:24:31Z]
+2016-07-19 21:43:17 INFO  node:151 - [node_s3] initializing ...
+2016-07-19 21:43:17 INFO  plugins:180 - [node_s3] modules [], plugins [mock-transport-service, mock-index-store, statsd, mock-engine-factory, node-mocks, asserting-local-transport, mock-search-service], sites []
+2016-07-19 21:43:17 INFO  env:290 - [node_s3] using [1] data paths, mounts [[/tmp (/dev/mapper/vg_sys-lv_tmp)]], net usable_space [1.7gb], net total_space [1.9gb], spins? [possibly], types [ext4]
+2016-07-19 21:43:17 INFO  env:305 - [node_s3] heap size [6.9gb], compressed ordinary object pointers [true]
+2016-07-19 21:43:17 WARN  env:315 - [node_s3] max file descriptors [4096] for elasticsearch process likely too low, consider increasing to at least [65536]
+2016-07-19 21:43:17 INFO  node:225 - [node_s3] initialized
+2016-07-19 21:43:17 INFO  node:251 - [node_s3] starting ...
+2016-07-19 21:43:17 INFO  StatsdService:101 - [node_s3] StatsD reporting triggered every [1s] to host [localhost:12345] with metric prefix [myhost3]
+2016-07-19 21:43:17 INFO  transport:184 - [node_s3] publish_address {local[7]}, bound_addresses {local[7]}
+2016-07-19 21:43:17 INFO  discovery:86 - [node_s3] SUITE-CHILD_VM=[0]-CLUSTER_SEED=[4735634484612329110]-HASH=[486CDD14067568]-cluster/1ycsXHZETcabByp2DtrzEQ
+2016-07-19 21:43:17 INFO  service:580 - [node_s1] added {{node_s3}{1ycsXHZETcabByp2DtrzEQ}{local}{local[7]}{mode=local},}, reason: local-disco-receive(from node[{node_s3}{1ycsXHZETcabByp2DtrzEQ}{local}{local[7]}{mode=local}])
+2016-07-19 21:43:17 INFO  service:580 - [node_s2] added {{node_s3}{1ycsXHZETcabByp2DtrzEQ}{local}{local[7]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:17 INFO  service:580 - [node_s3] detected_master {node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}, added {{node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local},{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:17 INFO  node:300 - [node_s3] started
+2016-07-19 21:43:17 INFO  allocation:238 - [node_s1] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[ytesbr][1], [ytesbr][1]] ...]).
+stopped master
+2016-07-19 21:43:21 INFO  plugins:180 - [transport_client_node_s3] modules [], plugins [], sites []
+2016-07-19 21:43:21 INFO  transport:184 - [transport_client_node_s3] publish_address {local[8]}, bound_addresses {local[8]}
+2016-07-19 21:43:25 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#masterFailOverShouldWork]: finished test
+2016-07-19 21:43:25 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#masterFailOverShouldWork]: cleaning up after test
+2016-07-19 21:43:25 INFO  store:136 - [node_s2] [ytesbr][0] start check index
+2016-07-19 21:43:25 INFO  store:136 - [node_s3] [ytesbr][4] start check index
+2016-07-19 21:43:25 INFO  store:167 - [node_s2] [ytesbr][0] end check index
+2016-07-19 21:43:25 INFO  store:167 - [node_s3] [ytesbr][4] end check index
+2016-07-19 21:43:25 INFO  store:136 - [node_s1] [ytesbr][8] start check index
+2016-07-19 21:43:25 INFO  store:167 - [node_s1] [ytesbr][8] end check index
+2016-07-19 21:43:25 INFO  StatsdPluginIntegrationTest:351 - [StatsdPluginIntegrationTest#masterFailOverShouldWork]: cleaned up after test
+Waiting for cleanup
+java.net.SocketException: Socket closed
+2016-07-19 21:43:35 INFO  node:310 - [node_s1] stopping ...
+	at java.net.PlainDatagramSocketImpl.rec2016-07-19 21:43:35 INFO  service:580 - [node_s2] master {new {node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local}, previous {node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}}, removed {{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}eive0(Native Meth{local}{local[od)2]}{mode=local}
+,}, r	ateason: l java.netoca.AbstractPlainDatagramSockl-disco-update
+2016-07-19 21:43:35 INFO  node:340 - [node_s1] stopped
+2016-07-19 21:43:35 INFO  node:358 - [node_s1] closing et...
+Impl.receive(Abstrac2016-07-19 2tPlainDatagramSocketImpl.java:143)1:43:35
+ INFO  service:580 - [node_s3] master {new	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	a {t com.automattic.elasticsearch.statsd.test.StatsdMockServer.run(StatsdMockServer.java:40)
+node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local}, previous {node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local}}, removed {{node_s1}{e8gZB1wbTFeX_5i_g9PWdA}{local}{local[2]}{mode=local},}, reason: local-disco-receive(from master)
+2016-07-19 21:43:35 INFO  StatsdService:121 - [node_s1] StatsD reporter stopped
+2016-07-19 21:43:35 INFO  node:436 - [node_s1] closed
+2016-07-19 21:43:35 INFO  node:310 - [node_s2] stopping ...
+2016-07-19 21:43:35 INFO  service:580 - [node_s3] master {new {node_s3}{1ycsXHZETcabByp2DtrzEQ}{local}{local[7]}{mode=local}, previous {node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local}}, removed {{node_s2}{DAKD_fY0S7yde45n6sjF-g}{local}{local[3]}{mode=local},}, reason: local-disco-update
+2016-07-19 21:43:35 INFO  node:340 - [node_s2] stopped
+2016-07-19 21:43:35 INFO  node:358 - [node_s2] closing ...
+2016-07-19 21:43:35 INFO  StatsdService:121 - [node_s2] StatsD reporter stopped
+2016-07-19 21:43:35 INFO  node:436 - [node_s2] closed
+2016-07-19 21:43:35 INFO  node:310 - [node_s3] stopping ...
+2016-07-19 21:43:35 INFO  node:340 - [node_s3] stopped
+2016-07-19 21:43:35 INFO  node:358 - [node_s3] closing ...
+2016-07-19 21:43:35 INFO  StatsdService:121 - [node_s3] StatsD reporter stopped
+2016-07-19 21:43:35 INFO  node:436 - [node_s3] closed
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.979 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ elasticsearch-statsd ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.pom (4 KB at 77.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.pom (3 KB at 43.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (7 KB at 129.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 KB at 240.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 76.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.pom (2 KB at 33.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (3 KB at 48.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 KB at 298.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom (10 KB at 182.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.jar
+Downloading: http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.jar (20 KB at 274.3 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.jar (57 KB at 461.3 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.jar (176 KB at 618.6 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar (203 KB at 662.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (221 KB at 709.9 KB/sec)
+[INFO] Building jar: /u01/elasticsearch-statsd-plugin/target/elasticsearch-statsd-2.3.4.0.jar
+[INFO]
+[INFO] --- maven-assembly-plugin:2.3:single (default) @ elasticsearch-statsd ---
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (2 KB at 26.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 KB at 405.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 KB at 545.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/apache/5/apache-5.pom (5 KB at 78.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 KB at 214.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (3 KB at 42.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (4 KB at 64.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 18.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2 KB at 39.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (2 KB at 35.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (8 KB at 148.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3 KB at 59.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (3 KB at 43.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.pom (2 KB at 37.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.2.1/maven-reporting-2.2.1.pom (2 KB at 30.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.pom (2 KB at 41.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.1/doxia-1.1.pom (15 KB at 285.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.pom (2 KB at 31.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.pom (4 KB at 70.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom (2 KB at 37.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom (3 KB at 46.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom (4 KB at 62.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom (9 KB at 141.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (3 KB at 29.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (2 KB at 32.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (2 KB at 35.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (2 KB at 34.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (3 KB at 55.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (4 KB at 61.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 16.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (2 KB at 38.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom (8 KB at 152.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 KB at 429.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (3 KB at 42.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (2 KB at 25.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 59.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 132.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 164.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (3 KB at 42.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom (4 KB at 54.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/17/maven-shared-components-17.pom (9 KB at 166.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom (2 KB at 25.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom (12 KB at 218.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom (20 KB at 369.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom (3 KB at 44.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom (4 KB at 62.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom (3 KB at 54.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom (3 KB at 41.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom (2 KB at 41.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom (3 KB at 52.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom (2 KB at 36.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom (2 KB at 39.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom (2 KB at 29.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom (3 KB at 54.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom (5 KB at 78.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom (4 KB at 74.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom (3 KB at 56.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/xbean/xbean/3.4/xbean-3.4.pom (19 KB at 341.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+Downloaded: http://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom (145 B at 3.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (6 KB at 104.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/com/google/collections/google-collections/1.0/google-collections-1.0.pom (3 KB at 50.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom
+Downloaded: http://repo.maven.apache.org/maven2/com/google/google/1/google-1.pom (2 KB at 31.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 14.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1018 B at 20.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (3 KB at 56.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (2 KB at 35.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.pom (3 KB at 53.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/4/maven-shared-components-4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/4/maven-shared-components-4.pom (3 KB at 44.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/4/maven-parent-4.pom (10 KB at 187.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 12.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (9 KB at 164.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.0/maven-shared-io-1.0.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.0/maven-shared-io-1.0.pom (3 KB at 60.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom (765 B at 15.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom (13 KB at 242.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom (767 B at 15.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom (2 KB at 28.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom (2 KB at 26.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom (588 B at 12.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom (7 KB at 118.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.2/plexus-utils-1.2.pom (767 B at 15.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.5/plexus-1.0.5.pom (6 KB at 107.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom (4 KB at 77.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom (3 KB at 43.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom (21 KB at 377.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (5 KB at 86.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.pom (4 KB at 61.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/7/maven-shared-components-7.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/7/maven-shared-components-7.pom (3 KB at 48.8 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom (765 B at 14.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom (12 KB at 217.3 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom (2 KB at 26.5 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom (2 KB at 24.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom (2 KB at 36.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom (2 KB at 30.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom (3 KB at 51.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom (2 KB at 33.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.0-alpha-1/maven-common-artifact-filters-1.0-alpha-1.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.0-alpha-1/maven-common-artifact-filters-1.0-alpha-1.pom (2 KB at 36.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/6/maven-shared-components-6.pom
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/6/maven-shared-components-6.pom (4 KB at 61.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (9 KB at 132.4 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar (10 KB at 156.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar (13 KB at 184.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 KB at 290.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 KB at 223.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (12 KB at 197.7 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (14 KB at 209.2 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 366.9 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar (41 KB at 467.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar (324 KB at 3811.1 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar (39 KB at 896.6 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar (31 KB at 381.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar (181 KB at 2859.0 KB/sec)
+Downloading: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.jar
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.1/file-management-1.1.jar (31 KB at 390.2 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar (60 KB at 567.9 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 KB at 495.4 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-repository-builder/1.0-alpha-2/maven-repository-builder-1.0-alpha-2.jar (23 KB at 502.5 KB/sec)
+Downloaded: http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar (57 KB at 490.5 KB/sec)
+[INFO] Reading assembly descriptor: /u01/elasticsearch-statsd-plugin/src/main/assemblies/plugin.xml
+[INFO] Building zip: /u01/elasticsearch-statsd-plugin/target/releases/elasticsearch-statsd-2.3.4.0.zip
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 48.123s
+[INFO] Finished at: Tue Jul 19 21:43:44 GMT 2016
+[INFO] Final Memory: 34M/581M
+[INFO] ------------------------------------------------------------------------
+
